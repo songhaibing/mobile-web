@@ -7,7 +7,7 @@ import FastClick from 'fastclick'; // 引入FastClick
 import HTTP from './lib/httpRequest';
 import API from './lib/api';
 import './config/rem';
-import '@/style/reset.less'
+import '@/style/common.less'
 import { Button, Toast } from 'vant';
 [Button, Toast].map(item => {
   Vue.use(item);
