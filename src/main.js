@@ -3,6 +3,7 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import store from './store/index'
 import FastClick from 'fastclick'; // 引入FastClick
 import HTTP from './lib/httpRequest';
 import API from './lib/api';
@@ -38,6 +39,7 @@ FastClick.attach(document.body);
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>',
   mounted() {
